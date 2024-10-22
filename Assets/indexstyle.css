@@ -1,0 +1,85 @@
+@font-face {
+  font-family: Coolvetica;
+  src: url(./FONT/coolvetica\ rg.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Coolvetica;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    color :#004CF3
+  }
+
+  
+  .container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .left-section {
+    flex: 1;
+    background-color: #004CF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .left-section img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .right-section {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding-left : 30px;
+    padding-top: 30px;
+  }
+  
+  .right-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .right-section li {
+    margin-bottom: 10px;
+  }
+  
+  .right-section a {
+    text-decoration: none;
+    color: #004CF3;
+    font-size: 18px;
+  }
+  
+  .right-section a:hover {
+    text-decoration: underline;
+    color: #FFA7EE;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-section {
+      order: -1; /* Pour s'assurer que le logo apparaisse en premier */
+      width: 100%;
+    }
+  
+    .right-section {
+      width: 100%;
+    }
+  }

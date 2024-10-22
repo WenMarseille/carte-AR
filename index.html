@@ -1,51 +1,28 @@
 <!DOCTYPE html>
-<html lang="fr">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Drag & Drop 01</title>
-        <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
-
-        <style>
-            body {
-                margin: 0;
-                width: 100%;
-                height: 100vh;
-                overflow: hidden;
-            }
-
-            .container {
-                width: 300vw;
-                height: 100vh;
-                overflow: hidden;
-                position: relative;
-                transform: translateX(-100vw);
-            }
-
-            .carte {
-                width: 200vw;
-                height: 100vh;
-                position: absolute;
-            }
-        </style>
-    </head>
-
-    <body>
-
-
-        <div class="container">
-            <img class="carte" src="Assets/IMG/" alt="" srcset="">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assets/indexstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+          <img src="Assets/IMG/Picto-wm.png" alt="Logo">
         </div>
-
-        <script>
-            var elem = document.querySelector('.carte');
-            var draggie = new Draggabilly(elem, {
-                axis: 'x',
-                containment: '.container'
-            });
-        </script>
-
-    </body>
-
+        <div class="right-section">
+            <h2>Rendu - Creative Coding</h2>
+            <br>
+            <ul>
+              <li><a href="Dragndropex1.html">Drag & Drop 1</a></li>
+              <li><a href="Dragndropex2.html">Drag & Drop 2</a></li>
+              <li><a href="Slidesex1.html">Slides 1</a></li>
+              <li><a href="##">Slides 2</a></li>
+              <li><a href="##">AR</a></li>
+              <li><a href="##">Prototype final</a></li>
+            </ul>
+          </div>
+      </div>  
+</body>
 </html>
