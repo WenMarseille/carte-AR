@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #FFA7EE;
     color :#004CF3
   }
 
@@ -47,6 +47,7 @@
     background-color: #f9f9f9;
     padding-left : 30px;
     padding-top: 30px;
+    padding-bottom: 15px;
   }
   
   .right-section ul {
@@ -75,7 +76,7 @@
     }
   
     .left-section {
-      order: -1; /* Pour s'assurer que le logo apparaisse en premier */
+      order: -1;
       width: 100%;
     }
   
