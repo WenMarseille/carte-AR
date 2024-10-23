@@ -13,7 +13,7 @@
 
 ![image](Assets/IMG/Capture2.png)
 
-## Drag & Drop
+## Slides
 
 ### Exercice 1 : 
 - Défilement d'une carte avec le format slide à l'aide de Slider
