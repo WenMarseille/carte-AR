@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AR modifiée</title>
+        <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+    </head>
+
+    <body>
+
+        <a-scene mindar-image="imageTargetSrc: IMG/AR/targets.mind; filterMinCF:0.0001; filterBeta: 0.1;"
+            color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
+            device-orientation-permission-ui="enabled: false">
+            <a-assets>
+
+                <a-asset-item id="avatarModel" src="./Assets/IMG/AR/eiffel_tower/scene.gltf"></a-asset-item>
+            </a-assets>
+
+            <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+            <a-entity mindar-image-target="targetIndex: 0">
+
+                <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.7 0.7 0.7" src="#avatarModel">
+            </a-entity>
+        </a-scene>
+
+    </body>
+
+</html>
