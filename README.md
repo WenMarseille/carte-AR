@@ -24,4 +24,9 @@
 ## AR
 
 ### Base :
+- Prise en main de la bibliothèque mindAR
+- Test basé sur le codé fourni dans la documentation
+
+### Personnalisé :
+-test
 
