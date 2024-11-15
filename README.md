@@ -28,5 +28,8 @@
 - Test basé sur le codé fourni dans la documentation
 
 ### Personnalisé :
--test
+- test avec une seule image cible :
+![image](Assets/IMG/toureiffel.png)
+
+- test avec deux images cible
 
