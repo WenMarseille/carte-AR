@@ -1,15 +1,25 @@
 @font-face {
     font-family: Rubik Bubbles ;
-    src: url();
+    src: url(./carte-AR/RenduFinal/FONT/Rubik_Bubbles/RubikBubbles-Regular.ttf);
 }
+@font-face {
+    font-family: Nunito ;
+    src: url(./carte-AR/RenduFinal/FONT/Nunito/Nunito-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Nunito italic ;
+    src: url(./carte-AR/RenduFinal/FONT/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Nunito';
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f8eaf2;
+    overflow: hidden;
   }
   
   .container {
@@ -37,12 +47,62 @@ body {
     position: absolute;
   }
   
+  /* Clouds Animation */
+  .clouds {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+  }
+  
+  .bg-clouds {
+    width: 150%;
+    position: absolute;
+    animation: moveClouds 15s linear infinite;
+  }
+  
+  @keyframes moveClouds {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Earth Animation */
+  .earth {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bg-earth {
+    width: 80%;
+    animation: rotateEarth 10s linear infinite;
+  }
+  
+  @keyframes rotateEarth {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Content */
   .content {
     display: grid;
     grid-template-rows: repeat(4, auto);
     align-content: center;
     justify-items: center;
-    z-index: 2;
+    z-index: 3;
     position: relative;
     background-color: transparent;
     padding: 20px;
@@ -52,6 +112,7 @@ body {
     font-size: 2.5rem;
     color: #6242db;
     margin: 0;
+    font-family: Rubik Bubbles;
   }
   
   p {
