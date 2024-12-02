@@ -1,20 +1,20 @@
 @font-face {
-    font-family: Rubik Bubbles ;
-    src: url(./carte-AR/RenduFinal/FONT/Rubik_Bubbles/RubikBubbles-Regular.ttf);
+    font-family: Rubik Bubbles Regular ;
+    src: url(./FONT/Rubik_Bubbles/RubikBubbles-Regular.ttf);
 }
 @font-face {
     font-family: Nunito ;
-    src: url(./carte-AR/RenduFinal/FONT/Nunito/Nunito-VariableFont_wght.ttf);
+    src: url(./FONT/Nunito/Nunito-VariableFont_wght.ttf);
 }
 @font-face {
     font-family: Nunito italic ;
-    src: url(./carte-AR/RenduFinal/FONT/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+    src: url(./FONT/Nunito/Nunito-Italic-VariableFont_wght.ttf);
 }
 
 /* styles.css */
 body {
   margin: 0;
-  font-family: Nunito;
+  font-family: Nunito Medium;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -112,13 +112,14 @@ body {
 
 h1 {
   font-size: 2.5rem;
-  color: #6242db;
+  color: white;
   margin: 0;
+  font-family: Rubik Bubbles Regular;
 }
 
 p {
   font-size: 1.2rem;
-  color: #6242db;
+  color: white;
   margin: 5px 0;
 }
 
