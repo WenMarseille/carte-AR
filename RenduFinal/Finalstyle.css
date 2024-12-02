@@ -14,13 +14,12 @@
 /* styles.css */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: Nunito;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8eaf2;
-  overflow: hidden;
+  background-color: white;
 }
 
 .container {
@@ -84,7 +83,7 @@ body {
 }
 
 .bg-earth {
-  width: 80%;
+  width: 100%;
   animation: rotateEarth 10s linear infinite;
 }
 
