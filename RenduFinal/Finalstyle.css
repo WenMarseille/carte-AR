@@ -33,6 +33,10 @@ body {
   background-color: #FFE3FC;
 }
 
+a {
+  text-decoration: none;
+  font-family: Nunito Bold;
+}
 .container {
   display: grid;
   grid-template-rows: 1fr 2fr; /* Divise en deux sections */
@@ -48,6 +52,35 @@ body {
   background-repeat: no-repeat;
   object-fit: cover;
   position: absolute;
+}
+
+.container1 {
+  display: grid;
+  grid-template-rows: 1fr 2fr; /* Divise en deux sections */
+  grid-template-columns: 1fr;
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  background-image:url(./IMG/Background1.png);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position: absolute;
+}
+
+.logo {
+  position: fixed;
+  top: 10px; /* Espacement par rapport au haut de l'écran */
+  right: 10px; /* Espacement par rapport à la droite de l'écran */
+  z-index: 4; /* Assure que le logo soit au-dessus de tout autre contenu */
+}
+
+.logo img {
+  width: 150px; /* Ajuste la taille du logo */
+  height: auto; /* Conserve les proportions */
 }
 
 /*.background {
@@ -77,7 +110,7 @@ body {
 }
 
 .bg-clouds {
-  width: 210%;
+  width: 220%;
   position: absolute;
   animation: moveClouds 15s linear infinite;
 }
@@ -101,11 +134,13 @@ body {
   align-items: flex-start; /* Align items to the top */
   align-items: center;
   bottom: 0;
+  transform: translateY(36%);
 }
 
 .bg-earth {
-  width: 200%;
+  width: 350%;
   animation: rotateEarth 10s linear infinite;
+  transform-origin: center center;
 }
 
 @keyframes rotateEarth {
@@ -119,7 +154,7 @@ body {
 
 /* Content Section (Over Earth) */
 .content {
-  position: absolute;
+  position: fixed;
   bottom: 15%; /* Place le contenu au-dessus de la terre */
   width: 100%;
   display: grid;
@@ -128,7 +163,6 @@ body {
   justify-items: center;
   z-index: 3; /* Au-dessus de la terre et des nuages */
   background-color: transparent;
-  padding: 0 20px;
 }
 
 h1 {
@@ -153,12 +187,12 @@ p {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: white;
-  color: #6242db;
+  color: #5E37F6;
   border: none;
-  border-radius: 20px;
-  font-size: 1rem;
+  border-radius: 30px;
+  font-size: 1.5rem;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.047);
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
@@ -166,4 +200,114 @@ p {
   transform: scale(1.05);
   background-color: #f2ebff;
 }
-  
+
+.cta-button:hover a {
+  color : #5E37F6;
+}
+.ticketContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3; 
+  height: 100vh;
+}
+.ticket{
+  animation: bouncingCard 0.6s ease-out infinite alternate;
+  background-color: white;
+  border-radius: 12px;
+  max-width: 80%;
+}
+.ticketShadow{
+  animation: bouncingShadow 0.6s ease-out infinite alternate;
+  margin-top: 4px;
+  width: 95%;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(93, 55, 246, 0.243);
+  filter: blur(12px);
+}
+
+/* Ticket Content */
+.ticketTitle{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 12px 16px 4px;
+  color: #5E37F6;
+}
+hr{
+  width: 90%;
+  border: 1px solid #efefef;
+}
+.ticketDetail{
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 4px 16px;
+  color: #0e0928;
+}
+.ticketSubDetail{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 12px 16px;
+}
+.ticketSubDetail .code{
+  margin-right: 24px;
+}
+.cta-button1 {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #5E37F6;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(93, 55, 246, 0.243);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cta-button1 a {
+  color : white;
+}
+
+.cta-button1:hover {
+  transform: scale(1.05);
+  background-color: white;
+}
+
+.cta-button:hover a {
+  color : #5E37F6;
+}
+/* Ticket Ripper */
+.ticketRip{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.circleLeft{
+  width: 12px;
+  height: 24px;
+  background-color: #FFE3FC;
+  border-radius: 0 12px 12px 0;
+}
+.ripLine{
+  width: 100%;
+  border-top: 3px solid #FFE3FC;
+  border-top-style: dashed ;
+}
+.circleRight{
+  width: 12px;
+  height: 24px;
+  background-color: #FFE3FC;
+  border-radius: 12px 0 0 12px;
+}
+
+/* Ticket Bouncing Animation */
+@keyframes bouncingCard {
+  from { transform: translateY(0);}
+  to {transform: translateY(-18px);}
+}
+@keyframes bouncingShadow {
+  from { transform: translateY(0px);}
+  to {transform: translateY(4px);}
+}
