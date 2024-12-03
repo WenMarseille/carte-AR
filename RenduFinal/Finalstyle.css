@@ -3,15 +3,26 @@
     src: url(./FONT/Rubik_Bubbles/RubikBubbles-Regular.ttf);
 }
 @font-face {
-    font-family: Nunito ;
-    src: url(./FONT/Nunito/Nunito-VariableFont_wght.ttf);
+    font-family: Nunito Medium;
+    src: url(./FONT/Nunito/static/Nunito-Medium.ttf);
 }
 @font-face {
-    font-family: Nunito italic ;
-    src: url(./FONT/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+  font-family: Nunito Bold;
+  src: url(./FONT/Nunito/static/Nunito-Bold.ttf);
+}
+@font-face {
+  font-family: Nunito ExtraBold;
+  src: url(./FONT/Nunito/static/Nunito-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Nunito LightItalic;
+  src: url(./FONT/Nunito/static/Nunito-LightItalic.ttf);
+}
+@font-face {
+    font-family: Nunito Italic ;
+    src: url(./FONT/Nunito/static/Nunito-Italic.ttf);
 }
 
-/* styles.css */
 body {
   margin: 0;
   font-family: Nunito Medium;
@@ -19,7 +30,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #FFE3FC;
 }
 
 .container {
@@ -31,33 +42,42 @@ body {
   max-width: 400px;
   position: relative;
   overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  background-image:url(./IMG/Background.png);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position: absolute;
 }
 
-.background {
-  grid-row: 1 / 3; /* La background occupe tout l'espace */
+/*.background {
+  grid-row: 1 / 3; /* La background occupe tout l'espace
   grid-column: 1 / 2;
   position: absolute;
   z-index: 1;
 }
+*/
 
+/*
 .bg-image {
   object-fit: cover;
   width: 100%;
   height: 100%;
   position: absolute;
 }
+*/
 
 /* Clouds Animation */
 .clouds {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 2; /* Superposé au background */
-  overflow: hidden;
+  z-index: 2; 
+ 
 }
 
 .bg-clouds {
-  width: 150%;
+  width: 210%;
   position: absolute;
   animation: moveClouds 15s linear infinite;
 }
@@ -74,16 +94,17 @@ body {
 /* Earth Animation */
 .earth {
   position: absolute;
-  bottom: 0;
   width: 100%;
   z-index: 2; /* Superposé au background mais derrière le contenu */
   display: flex;
   justify-content: center;
+  align-items: flex-start; /* Align items to the top */
   align-items: center;
+  bottom: 0;
 }
 
 .bg-earth {
-  width: 100%;
+  width: 200%;
   animation: rotateEarth 10s linear infinite;
 }
 
