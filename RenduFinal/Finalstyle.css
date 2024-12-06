@@ -96,30 +96,11 @@ a {
   /* Conserve les proportions */
 }
 
-/*.background {
-  grid-row: 1 / 3; /* La background occupe tout l'espace
-  grid-column: 1 / 2;
-  position: absolute;
-  z-index: 1;
-}
-*/
-
-/*
-.bg-image {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-*/
-
-
 .clouds {
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 2;
-
 }
 
 .bg-clouds {
@@ -138,16 +119,13 @@ a {
   }
 }
 
-/* Earth Animation */
 .earth {
   position: absolute;
   width: 100%;
   z-index: 2;
-  /* Superposé au background mais derrière le contenu */
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  /* Align items to the top */
   align-items: center;
   bottom: 0;
   transform: translateY(45%);
@@ -155,7 +133,7 @@ a {
 
 .bg-earth {
   width: 350%;
-  animation: rotateEarth 10s linear infinite;
+  animation: rotateEarth 20s linear infinite;
   transform-origin: center center;
 }
 
@@ -169,18 +147,15 @@ a {
   }
 }
 
-/* Content Section (Over Earth) */
 .content {
   position: fixed;
   bottom: 3%;
-  /* Place le contenu au-dessus de la terre */
   width: 100%;
   display: grid;
   grid-template-rows: repeat(4, auto);
   align-content: center;
   justify-items: center;
   z-index: 3;
-  /* Au-dessus de la terre et des nuages */
   background-color: transparent;
 }
 
@@ -188,7 +163,7 @@ h1 {
   font-size: 2.5rem;
   color: white;
   margin: 0;
-  font-family: Rubik Bubbles Regular;
+  font-family: Nunito ExtraBold;
 }
 
 p {
@@ -389,10 +364,10 @@ hr {
 
 .swiper {
   width: 80%;
-  height: 50%;
+  height: 55%;
   border: 1px solid #5E37F6;
   border-radius: 20px;
-  margin-bottom: 20px
+  margin-bottom: 10px;
 }
 
 .swiper-slide {
@@ -440,12 +415,12 @@ hr {
 }
 
 .instructions {
+  display:flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 12px;
-  /* Espace entre l'icône et le texte */
   margin: 16px auto;
-  /* Centrage et espace autour */
   max-width: 80%;
   text-align: center;
 }
@@ -457,14 +432,12 @@ hr {
   width: 40px;
   height: 40px;
   background-color: #5E37F6;
-  /* Couleur de la pastille */
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .info-icon img {
   width: 20px;
-  /* Taille de l'icône */
   height: 20px;
 }
 
