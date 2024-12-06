@@ -1,26 +1,31 @@
 @font-face {
-    font-family: Rubik Bubbles Regular ;
-    src: url(./FONT/Rubik_Bubbles/RubikBubbles-Regular.ttf);
+  font-family: Rubik Bubbles Regular;
+  src: url(./FONT/Rubik_Bubbles/RubikBubbles-Regular.ttf);
 }
+
 @font-face {
-    font-family: Nunito Medium;
-    src: url(./FONT/Nunito/static/Nunito-Medium.ttf);
+  font-family: Nunito Medium;
+  src: url(./FONT/Nunito/static/Nunito-Medium.ttf);
 }
+
 @font-face {
   font-family: Nunito Bold;
   src: url(./FONT/Nunito/static/Nunito-Bold.ttf);
 }
+
 @font-face {
   font-family: Nunito ExtraBold;
   src: url(./FONT/Nunito/static/Nunito-ExtraBold.ttf);
 }
+
 @font-face {
   font-family: Nunito LightItalic;
   src: url(./FONT/Nunito/static/Nunito-LightItalic.ttf);
 }
+
 @font-face {
-    font-family: Nunito Italic ;
-    src: url(./FONT/Nunito/static/Nunito-Italic.ttf);
+  font-family: Nunito Italic;
+  src: url(./FONT/Nunito/static/Nunito-Italic.ttf);
 }
 
 body {
@@ -37,9 +42,11 @@ a {
   text-decoration: none;
   font-family: Nunito Bold;
 }
+
 .container {
   display: grid;
-  grid-template-rows: 1fr 2fr; /* Divise en deux sections */
+  grid-template-rows: 1fr 2fr;
+  /* Divise en deux sections */
   grid-template-columns: 1fr;
   height: 100%;
   width: 100%;
@@ -48,7 +55,7 @@ a {
   overflow: hidden;
   position: absolute;
   z-index: 1;
-  background-image:url(./IMG/Background.png);
+  background-image: url(./IMG/Background.png);
   background-repeat: no-repeat;
   object-fit: cover;
   position: absolute;
@@ -56,7 +63,8 @@ a {
 
 .container1 {
   display: grid;
-  grid-template-rows: 1fr 2fr; /* Divise en deux sections */
+  grid-template-rows: 1fr 2fr;
+  /* Divise en deux sections */
   grid-template-columns: 1fr;
   height: 100%;
   width: 100%;
@@ -65,7 +73,7 @@ a {
   overflow: hidden;
   position: absolute;
   z-index: 1;
-  background-image:url(./IMG/Background1.png);
+  background-image: url(./IMG/Background1.png);
   background-repeat: no-repeat;
   object-fit: cover;
   position: absolute;
@@ -73,14 +81,19 @@ a {
 
 .logo {
   position: fixed;
-  top: 10px; /* Espacement par rapport au haut de l'écran */
-  right: 10px; /* Espacement par rapport à la droite de l'écran */
-  z-index: 4; /* Assure que le logo soit au-dessus de tout autre contenu */
+  top: 10px;
+  /* Espacement par rapport au haut de l'écran */
+  right: 10px;
+  /* Espacement par rapport à la droite de l'écran */
+  z-index: 4;
+  /* Assure que le logo soit au-dessus de tout autre contenu */
 }
 
 .logo img {
-  width: 150px; /* Ajuste la taille du logo */
-  height: auto; /* Conserve les proportions */
+  width: 150px;
+  /* Ajuste la taille du logo */
+  height: auto;
+  /* Conserve les proportions */
 }
 
 /*.background {
@@ -100,13 +113,13 @@ a {
 }
 */
 
-/* Clouds Animation */
+
 .clouds {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 2; 
- 
+  z-index: 2;
+
 }
 
 .bg-clouds {
@@ -119,6 +132,7 @@ a {
   from {
     transform: translateX(-50%);
   }
+
   to {
     transform: translateX(0);
   }
@@ -128,13 +142,15 @@ a {
 .earth {
   position: absolute;
   width: 100%;
-  z-index: 2; /* Superposé au background mais derrière le contenu */
+  z-index: 2;
+  /* Superposé au background mais derrière le contenu */
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align items to the top */
+  align-items: flex-start;
+  /* Align items to the top */
   align-items: center;
   bottom: 0;
-  transform: translateY(36%);
+  transform: translateY(45%);
 }
 
 .bg-earth {
@@ -147,6 +163,7 @@ a {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -155,13 +172,15 @@ a {
 /* Content Section (Over Earth) */
 .content {
   position: fixed;
-  bottom: 15%; /* Place le contenu au-dessus de la terre */
+  bottom: 5%;
+  /* Place le contenu au-dessus de la terre */
   width: 100%;
   display: grid;
   grid-template-rows: repeat(4, auto);
   align-content: center;
   justify-items: center;
-  z-index: 3; /* Au-dessus de la terre et des nuages */
+  z-index: 3;
+  /* Au-dessus de la terre et des nuages */
   background-color: transparent;
 }
 
@@ -202,23 +221,26 @@ p {
 }
 
 .cta-button:hover a {
-  color : #5E37F6;
+  color: #5E37F6;
 }
-.ticketContainer{
+
+.ticketContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 3; 
+  z-index: 3;
   height: 100vh;
 }
-.ticket{
+
+.ticket {
   animation: bouncingCard 0.6s ease-out infinite alternate;
   background-color: white;
   border-radius: 12px;
   max-width: 80%;
 }
-.ticketShadow{
+
+.ticketShadow {
   animation: bouncingShadow 0.6s ease-out infinite alternate;
   margin-top: 4px;
   width: 95%;
@@ -229,31 +251,36 @@ p {
 }
 
 /* Ticket Content */
-.ticketTitle{
+.ticketTitle {
   font-size: 1.5rem;
   font-weight: 700;
   padding: 12px 16px 4px;
   color: #5E37F6;
 }
-hr{
+
+hr {
   width: 90%;
   border: 1px solid #efefef;
 }
-.ticketDetail{
+
+.ticketDetail {
   font-size: 1.1rem;
   font-weight: 500;
   padding: 4px 16px;
   color: #0e0928;
 }
-.ticketSubDetail{
+
+.ticketSubDetail {
   display: flex;
   justify-content: space-between;
   font-size: 1rem;
   padding: 12px 16px;
 }
-.ticketSubDetail .code{
+
+.ticketSubDetail .code {
   margin-right: 24px;
 }
+
 .cta-button1 {
   margin-top: 10px;
   padding: 10px 20px;
@@ -267,7 +294,7 @@ hr{
 }
 
 .cta-button1 a {
-  color : white;
+  color: white;
 }
 
 .cta-button1:hover {
@@ -275,27 +302,31 @@ hr{
   background-color: white;
 }
 
-.cta-button:hover a {
-  color : #5E37F6;
+.cta-button1:hover a {
+  color: #5E37F6;
 }
+
 /* Ticket Ripper */
-.ticketRip{
+.ticketRip {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.circleLeft{
+
+.circleLeft {
   width: 12px;
   height: 24px;
   background-color: #FFE3FC;
   border-radius: 0 12px 12px 0;
 }
-.ripLine{
+
+.ripLine {
   width: 100%;
   border-top: 3px solid #FFE3FC;
-  border-top-style: dashed ;
+  border-top-style: dashed;
 }
-.circleRight{
+
+.circleRight {
   width: 12px;
   height: 24px;
   background-color: #FFE3FC;
@@ -304,10 +335,193 @@ hr{
 
 /* Ticket Bouncing Animation */
 @keyframes bouncingCard {
-  from { transform: translateY(0);}
-  to {transform: translateY(-18px);}
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-18px);
+  }
 }
+
 @keyframes bouncingShadow {
-  from { transform: translateY(0px);}
-  to {transform: translateY(4px);}
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(4px);
+  }
+}
+
+.spinning-stamp {
+  position: absolute;
+  top: 25%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  /* Ajustez la taille */
+  height: 300px;
+  z-index: -1;
+  /* Place le tampon derrière tout */
+}
+
+.spinning-stamp img {
+  width: 100%;
+  /* L'image occupe tout l'espace du conteneur */
+  height: auto;
+  animation: spinStamp 10s linear infinite;
+  /* Animation de rotation */
+  opacity: 0.2;
+  /* Rendre le tampon subtil (ajustez si nécessaire) */
+}
+
+/* Animation de rotation */
+@keyframes spinStamp {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.swiper {
+  width: 80%;
+  height: 50%;
+  border: 1px solid #5E37F6;
+  border-radius: 20px;
+  margin-bottom: 20px
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 28px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide p {
+  position: absolute;
+  color: #5E37F6
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+
+.container2 {
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  overflow: hidden;
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  /* Active Flexbox */
+  flex-direction: column;
+  /* Empile les enfants verticalement */
+  justify-content: center;
+  /* Centre horizontalement */
+  align-items: center;
+  /* Centre verticalement */
+
+}
+
+.instructions {
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  /* Espace entre l'icône et le texte */
+  margin: 16px auto;
+  /* Centrage et espace autour */
+  max-width: 80%;
+  text-align: center;
+}
+
+.info-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #5E37F6;
+  /* Couleur de la pastille */
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-icon img {
+  width: 20px;
+  /* Taille de l'icône */
+  height: 20px;
+}
+
+.info-icon svg {
+  color: white;
+}
+
+.instructions p {
+  font-size: 1rem;
+  color: #333;
+  /* Couleur du texte */
+  font-family: Nunito Medium;
+  margin: 0;
+}
+
+.scan-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #5E37F6;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.scan-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.scan-icon1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #5E37F6;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.scan-icon1 img {
+  width: 20px;
+  /* Ajustez selon la taille souhaitée */
+  height: 20px;
+}
+
+.scan-icon2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #5E37F6;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.scan-icon2 img {
+  width: 20px;
+  height: 20px;
 }
