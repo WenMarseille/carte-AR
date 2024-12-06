@@ -351,7 +351,6 @@ hr {
   /* Rendre le tampon subtil (ajustez si nécessaire) */
 }
 
-/* Animation de rotation */
 @keyframes spinStamp {
   from {
     transform: rotate(0deg);
@@ -365,9 +364,10 @@ hr {
 .swiper {
   width: 80%;
   height: 55%;
-  border: 1px solid #5E37F6;
+  border: 3px dashed #5E37F6;
   border-radius: 20px;
   margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(93, 55, 246, 0.243);
 }
 
 .swiper-slide {
@@ -447,7 +447,7 @@ hr {
 
 .instructions p {
   font-size: 1rem;
-  color: #333;
+  color: #5E37F6;
   /* Couleur du texte */
   font-family: Nunito Medium;
   margin: 0;
