@@ -51,14 +51,12 @@ Résultat :
 ![image](Assets/IMG/TestAR1cible.jpg)
 ![image](Assets/IMG/TestAR2cibles.jpg)
 
----
 
 # IV - Rendu final : ✈️ ScanFly, L'application interactive pour une exposition immersive  
 
 ## 📝 Description  
 ScanFly est une application mobile conçue pour transformer une exposition en une aventure interactive et ludique. Grâce à une chasse aux monuments emblématiques, elle capte l'attention des visiteurs, les engage et enrichit leur expérience tout au long du parcours.  
 
----
 
 ## 🎯 Objectif  
 L'objectif principal de ScanFly est de :  
@@ -66,16 +64,14 @@ L'objectif principal de ScanFly est de :
 - Proposer une **découverte éducative** des monuments emblématiques dans un cadre ludique.  
 - Faciliter une **connexion immersive** avec le contenu de l'exposition.  
 
----
 
 ## 🚀 Parcours Utilisateur  
-![image](Assets/IMG/Final)
+![image](Assets/IMG/Final.png)
 ### **1. Écran d'Accueil**  
 - Message principal : **"Voyager n’a jamais été aussi simple."**  
 - Illustration accrocheuse qui donne envie de prendre part au voyage.  
 - Action : un bouton **Commencer** qui lance l'expérience.  
 
----
 
 ### **2. Onboarding : Embarquez pour le voyage**  
 - **Introduction immersive** :  
@@ -86,7 +82,6 @@ L'objectif principal de ScanFly est de :
   - Scanner ces images avec l'application pour débloquer les monuments.    
 - **Action** : bouton **Commencer** pour passer à la carte interactive.  
 
----
 
 ### **3. Carte Interactive**  
 - Une carte visuelle et intuitive affichant les monuments emblématiques répartis sur différents continents.  
@@ -95,7 +90,6 @@ L'objectif principal de ScanFly est de :
   - Naviguer librement pour explorer les options.  
 - Une approche interactive favorisant l'exploration autonome.  
 
----
 
 ### **4. Découverte et Exploration**  
 - **Gamification** :  
@@ -104,19 +98,17 @@ L'objectif principal de ScanFly est de :
 - **Éducation ludique** :  
   - Une présentation enrichissante et engageante des monuments pour apprendre tout en s’amusant.  
 
----
 
 ## 🖼️ Images Cibles de l'Exposition  
 Les visiteurs doivent retrouver et scanner ces images pour débloquer les informations des monuments :  
 
 1. **Exemple 1 : Monuments cachés**  
-   ![Image](Assets/IMG/Cible1)   
-   ![Image](Assets/IMG/Cible2) 
-   ![Image](Assets/IMG/Cible3) 
-   ![Image](Assets/IMG/Cible4)  
-   ![Image](Assets/IMG/Cible5)  
+   ![Image](Assets/IMG/Cible1.png)   
+   ![Image](Assets/IMG/Cible2.png) 
+   ![Image](Assets/IMG/Cible3.png) 
+   ![Image](Assets/IMG/Cible4.png)  
+   ![Image](Assets/IMG/Cible5.png)  
 
----
 
 ## 🎯 Résultats du Scan  
 
@@ -124,13 +116,11 @@ Les visiteurs doivent retrouver et scanner ces images pour débloquer les inform
 Lorsque le visiteur scanne un monument, il découvre une image illustrative originale du monument scanné.  
 
 Voici des exemples de résultats :  
-![Image](Assets/IMG/Test1)  
-![Image](Assets/IMG/Test2)
-![Image](Assets/IMG/Test3)
-![Image](Assets/IMG/Test4)
-![Image](Assets/IMG/Test5)  
+![Image](Assets/IMG/Test1.png)  
+![Image](Assets/IMG/Test2.png)
+![Image](Assets/IMG/Test3.png)
+![Image](Assets/IMG/Test4.png)
+![Image](Assets/IMG/Test5.png)  
 
+Merci monsieur Tilly pour votre professionnalisme et vos enseignements ! Bonne continuation.
 
-###Merci monsieur Tilly pour votre professionnalisme et vos enseignements ! Bonne continuation 
-
----
