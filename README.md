@@ -100,9 +100,7 @@ L'objectif principal de ScanFly est de :
 
 
 ## 🖼️ Images Cibles de l'Exposition  
-Les visiteurs doivent retrouver et scanner ces images pour débloquer les informations des monuments :  
-
-**Monuments cachés**  
+Les visiteurs doivent retrouver et scanner ces images pour débloquer les informations des monuments :   
 
    ![Image](Assets/IMG/Cible1.png)   
    ![Image](Assets/IMG/Cible2.png) 
@@ -117,7 +115,7 @@ Les visiteurs doivent retrouver et scanner ces images pour débloquer les inform
 Lorsque le visiteur scanne un monument, il découvre une image illustrative originale du monument scanné.  
 
 Voici des exemples de résultats : 
- 
+
 ![Image](Assets/IMG/Test1.png)  
 ![Image](Assets/IMG/Test2.png)
 ![Image](Assets/IMG/Test3.png)
