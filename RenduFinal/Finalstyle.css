@@ -448,7 +448,6 @@ hr {
 .instructions p {
   font-size: 1rem;
   color: #5E37F6;
-  /* Couleur du texte */
   font-family: Nunito Medium;
   margin: 0;
 }
@@ -480,7 +479,6 @@ hr {
 
 .scan-icon1 img {
   width: 20px;
-  /* Ajustez selon la taille souhaitée */
   height: 20px;
 }
 
