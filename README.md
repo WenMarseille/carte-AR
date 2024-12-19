@@ -86,7 +86,7 @@ L'objectif principal de ScanFly est de :
 ### **3. Carte Interactive**  
 - Une carte visuelle et intuitive affichant les monuments emblématiques répartis sur différents continents.  
 - Fonctionnalités :  
-  - Cliquer sur un marqueur pour localiser un monument dans l'exposition.  
+  - Cliquer sur un bouton pour scanner un monument dans l'exposition.  
   - Naviguer librement pour explorer les options.  
 - Une approche interactive favorisant l'exploration autonome.  
 
@@ -101,11 +101,18 @@ L'objectif principal de ScanFly est de :
 
 ## 🖼️ Images Cibles de l'Exposition  
 Les visiteurs doivent retrouver et scanner ces images pour débloquer les informations des monuments :   
+**Slide 1**
 
    ![Image](Assets/IMG/Cible1.png)   
    ![Image](Assets/IMG/Cible2.png) 
+
+**Slide 2**
+
    ![Image](Assets/IMG/Cible3.png) 
-   ![Image](Assets/IMG/Cible4.png)  
+   ![Image](Assets/IMG/Cible4.png)
+
+**Slide 3**  
+
    ![Image](Assets/IMG/Cible5.png)  
 
 
