@@ -17,39 +17,44 @@
             device-orientation-permission-ui="enabled: false">
             <a-assets>
 
-                <a-asset-item id="Eiffeltower" src="IMG/ARcibles/TourEiffel.png"></a-asset-item>
+                <!--<a-asset-item id="Eiffeltower" src="IMG/ARcibles/TourEiffel.png"></a-asset-item>-->
+                <img id="Eiffeltower" src="IMG/ARcibles/TourEiffel.png" />
 
-                <a-asset-item id="Statueliberty" src="IMG/ARcibles/StatueLiberte.jpg"></a-asset-item>
-                <a-asset-item id="Tajmahal" src="IMG/ARcibles/TajMahal.jpeg"></a-asset-item>
-                <a-asset-item id="Christredeemer" src="IMG/ARcibles/ChristRedempteur.png"></a-asset-item>
-                <a-asset-item id="Pyramids" src="IMG/ARcibles/Pyramids.png"></a-asset-item>
+               <!-- <a-asset-item id="Statueliberty" src="IMG/ARcibles/StatueLiberte.jpg"></a-asset-item>-->
+                <img id="Statueliberty" src="IMG/ARcibles/StatueLiberte.jpg" />
+               <!-- <a-asset-item id="Tajmahal" src="IMG/ARcibles/TajMahal.jpeg"></a-asset-item>-->
+                <img id="Tajmahal" src="IMG/ARcibles/TajMahal.jpeg" />
+                <img id="Christredeemer" src="IMG/ARcibles/ChristRedempteur.png" />
+                <img id="Pyramids" src="IMG/ARcibles/Pyramids.png" />
+                <!--<a-asset-item id="Christredeemer" src="IMG/ARcibles/ChristRedempteur.png"></a-asset-item>
+                <a-asset-item id="Pyramids" src="IMG/ARcibles/Pyramids.png"></a-asset-item>-->
             </a-assets>
 
             <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
             <!-- image cible01 -->
             <a-entity mindar-image-target="targetIndex: 2">
-                <img id="cible1" src="#Eiffeltower" />
+                <a-plane src="#Eiffeltower" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
             </a-entity>
 
             <!-- image cible02 -->
             <a-entity mindar-image-target="targetIndex: 4">
-                <img id="cible2" src="#Statueliberty" />
+                <a-plane src="#Statueliberty" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
             </a-entity>
 
             <!-- image cible03 -->
             <a-entity mindar-image-target="targetIndex: 3">
-                <img id="cible3" src="#Christredeemer" />
+                <a-plane src="#Christredeemer" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
             </a-entity>
 
             <!-- image cible04 -->
             <a-entity mindar-image-target="targetIndex: 1">
-                <img id="cible4" src="#Pyramids" />
+                <a-plane src="#Pyramids" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
             </a-entity>
 
             <!-- image cible05 -->
             <a-entity mindar-image-target="targetIndex: 0">
-                <img id="cible5" src="#Tajmahal" />
+                <a-plane src="#Tajmahal" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
             </a-entity>
 
         </a-scene>
